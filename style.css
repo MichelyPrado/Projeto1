@@ -1,0 +1,17 @@
+links {
+    display:inline-block;
+    justify-content:center;
+    width: 600px;
+}
+
+a {
+    color:black;
+    font-size: 16px;
+    text-align: center;
+    align-items: center;
+
+}
+
+h1 {
+    text-align: center;
+}
