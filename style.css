@@ -1,0 +1,13 @@
+/* style externo */
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    color:darkmagenta;
+    line-height: 1,5;
+    font-weight: bold;
+    font-size: 22pt;
+    
+}
