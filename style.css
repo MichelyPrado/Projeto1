@@ -53,8 +53,13 @@ p {
 }
 
 .paragrafo-de-artigo {
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
     padding: 20px;
+    border: 20px 0 20px 0;
+}
+
+p + .paragrafo-de-artigo {
+    padding: 0px;
 }
 
 article {
@@ -64,4 +69,20 @@ article {
     border-radius: 20px 0 20px 0;
     /*inserindo margens ao redor do texto com bordas arredondadas*/
 
+}
+
+.link-topo {
+    text-decoration: underline;
+}
+
+.menu-principal ul {
+    background-color: var(--cor-secundaria);
+}
+
+.menu-principal li {
+    background-color: var(--cor-fundo);
+}
+
+.menu-um h1 {
+    background-color: var(--cor-secundaria);
 }
