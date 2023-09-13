@@ -1,4 +1,12 @@
 /* style externo */
+:root {
+    --cor-primaria: #FFD0D0;
+    --cor-secundaria: #FF9EAA;
+    --cor-terciaria: #C1ECE4;
+    --cor-quaternaria: #3AA6B9;
+    --cor-fundo: #fbfdff;
+    --margem-paragrafos: 20px;
+}
 
 html {
     scroll-behavior: smooth;
@@ -7,32 +15,32 @@ html {
 body {
     text-align: justify;
     margin: 20px 50px;
-    background-color: #FFC8C8;
+    background-color: var(--cor-primaria);
 }
 
 .titulo-de-pagina {
-    color:#FF3FA4;
+    color: var(--cor-secundaria);
     line-height: 1,5;
     font-weight: bold;
     font-size: 22pt;
 }
 
 .titulo-de-artigo {
-    color:blue;
+    color: var(--cor-quaternaria);
     line-height: 1,5;
     font-weight: bold;
     font-size: 18pt;
 }
 
 .titulo-de-secao {
-    color:coral;
+    color: var(--cor-quaternaria);
     line-height: 1.8;
     font-size: 18pt;
     font-weight: bold;
 }
 
 .subtitulo-de-artigo {
-    color:purple;
+    color:var(--cor-quaternaria);
     line-height: 1.5;
     font-size: 14pt;
     font-weight: bold;
@@ -45,12 +53,12 @@ p {
 }
 
 .paragrafo-de-artigo {
-    background-color: antiquewhite;
+    background-color: var(--cor-primaria);
     padding: 20px;
 }
 
 article {
-    border: 4px solid #FF3FA4;
+    border: 4px dotted var(--cor-quaternaria);
     padding: 20px;
     margin: 20px 0;
     border-radius: 20px 0 20px 0;
