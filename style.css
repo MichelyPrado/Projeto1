@@ -25,6 +25,13 @@ body {
     font-size: 22pt;
 }
 
+.titulo-de-pagina li {
+    color: rgb(0, 0, 0);
+    font-size: 10pt;
+    text-decoration: underline;
+}
+
+
 .titulo-de-artigo {
     color: var(--cor-quaternaria);
     line-height: 1,5;
@@ -55,7 +62,7 @@ p {
 .paragrafo-de-artigo {
     background-color: var(--cor-terciaria);
     padding: 20px;
-    border: 20px 0 20px 0;
+    border-radius: 20px 0 20px 0;
 }
 
 p + .paragrafo-de-artigo {
@@ -69,6 +76,14 @@ article {
     border-radius: 20px 0 20px 0;
     /*inserindo margens ao redor do texto com bordas arredondadas*/
 
+}
+
+article p:last-child {
+    border-radius: 20px 0 20px 0;
+}
+
+article p:last-of-type {
+    border-radius: 0%;
 }
 
 .link-topo {
