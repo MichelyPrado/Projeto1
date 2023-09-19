@@ -23,6 +23,11 @@ body {
     line-height: 1,5;
     font-weight: bold;
     font-size: 22pt;
+    display:flex;
+}
+
+.titulo-de-pagina #links {
+    display: flex;
 }
 
 .titulo-de-pagina li {
@@ -74,12 +79,13 @@ article {
     padding: 20px;
     margin: 20px 0;
     border-radius: 20px 0 20px 0;
+    width: 25%;
     /*inserindo margens ao redor do texto com bordas arredondadas*/
 
 }
 
 article p:last-child {
-    border-radius: 20px 0 20px 0;
+    border: 0%;
 }
 
 article p:last-of-type {
@@ -96,8 +102,16 @@ article p:last-of-type {
 
 .menu-principal li {
     background-color: var(--cor-fundo);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .menu-um h1 {
     background-color: var(--cor-secundaria);
+}
+
+section.tag-semantica {
+    background-color:blue;
 }
