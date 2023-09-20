@@ -6,6 +6,8 @@
     --cor-quaternaria: #3AA6B9;
     --cor-fundo: #fbfdff;
     --margem-paragrafos: 20px;
+    --fonte-primaria: "Times New Roman", serif;
+    --fonte-secundaria: Arial, Helvetica, sans-serif;
 }
 
 html {
@@ -18,6 +20,7 @@ body {
     background-color: var(--cor-primaria);
 }
 
+/* Estilos de página */
 .titulo-de-pagina {
     color: var(--cor-secundaria);
     line-height: 1,5;
@@ -32,18 +35,14 @@ body {
 
 .titulo-de-pagina li {
     color: rgb(0, 0, 0);
-    font-size: 10pt;
+    font-size: 20pt;
     text-decoration: underline;
+    line-height: 40px;
+    display: flex;
+    justify-content:baseline;
 }
 
-
-.titulo-de-artigo {
-    color: var(--cor-quaternaria);
-    line-height: 1,5;
-    font-weight: bold;
-    font-size: 18pt;
-}
-
+/* Estilos de seção */
 .titulo-de-secao {
     color: var(--cor-quaternaria);
     line-height: 1.8;
@@ -51,17 +50,25 @@ body {
     font-weight: bold;
 }
 
-.subtitulo-de-artigo {
-    color:var(--cor-quaternaria);
-    line-height: 1.5;
-    font-size: 14pt;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 p {
     color:rgb(31, 22, 1);
     line-height: 1.2;
+}
+
+section.tag-semantica {
+    background-color:blue;
+}
+
+/* Estilos de artigo */
+
+article {
+    border: 4px dotted var(--cor-quaternaria);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 20px 0 20px 0;
+    width: 25%;
+    /*inserindo margens ao redor do texto com bordas arredondadas*/
+
 }
 
 .paragrafo-de-artigo {
@@ -74,14 +81,12 @@ p + .paragrafo-de-artigo {
     padding: 0px;
 }
 
-article {
-    border: 4px dotted var(--cor-quaternaria);
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 20px 0 20px 0;
-    width: 25%;
-    /*inserindo margens ao redor do texto com bordas arredondadas*/
-
+.subtitulo-de-artigo {
+    color:var(--cor-quaternaria);
+    line-height: 1.5;
+    font-size: 14pt;
+    font-weight: bold;
+    font-family: var(--fonte-secundaria);
 }
 
 article p:last-child {
@@ -92,10 +97,14 @@ article p:last-of-type {
     border-radius: 0%;
 }
 
-.link-topo {
-    text-decoration: underline;
+.titulo-de-artigo {
+    color: var(--cor-quaternaria);
+    line-height: 1,5;
+    font-weight: bold;
+    font-size: 18pt;
 }
 
+/* Estilos do menu principal */
 .menu-principal ul {
     background-color: var(--cor-secundaria);
 }
@@ -112,6 +121,11 @@ article p:last-of-type {
     background-color: var(--cor-secundaria);
 }
 
-section.tag-semantica {
-    background-color:blue;
+.link-topo {
+    text-decoration: underline;
 }
+ .links:link {
+    color:aqua;
+
+ }
+
